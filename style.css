@@ -1,35 +1,82 @@
 @font-face {
     font-family: 'Alliance';
-    src: local('Alliance No 1 Bold'), local('Alliance-No-1-Bold'),
-        url('AllianceNo1-Bold.woff2') format('woff2'),
+    src:url('AllianceNo1-Bold.woff2') format('woff2'),
         url('AllianceNo1-Bold.woff') format('woff'),
         url('AllianceNo1-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
   }
 
+@font-face {
+    font-family: 'Mona Sans';
+    src:url('Mona-Sans-Medium.woff2') format('woff2'),
+        url('Mona-Sans-Medium.woff') format('woff'),
+        url('Mona-Sans-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mona Sans';
+    src:url('Mona-Sans-Bold.woff2') format('woff2'),
+        url('Mona-Sans-Bold.woff') format('woff'),
+        url('Mona-Sans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
 body {
     background-color: #000509;
+    margin: 0;
+}
+
+header {
+    background-color: #171a22;
+    height: 64px;
+}
+
+.menu {
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    flex-direction: row;
+}
+
+nav {
+    padding-left: 16px;
+}
+
+a {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+    color: #f0f6fc;
+    text-decoration: none;
+    padding-left: 12px;
 }
 
 h1 {
     font-family: Alliance;
     font-size: 60px;
-    margin-block: 0.1em;
-    color: #7ee787;
+    line-height: 0px;
+    color: #f0f6fc;
 }
 
 h2 {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 20px;
     font-weight: 600;
-    margin-block: 0.1em;
+    line-height: 32px;
     color: #f0f6fc;
 }
 
 h3 {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 16px;
+    line-height: 5px;
     font-weight: normal;
     color: #f0f6fc;
 }
@@ -43,11 +90,45 @@ p {
 .wrapper {
     width: 800px;
     margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border-style: solid;
     border-radius: 15px;
     border-width: 1px;
     border-color: #31363c;
     background-color: #0d1016;
-    padding: 60px;
     align-content: center;
   }
+
+  .content {
+    padding: 5px 64px 64px 64px;
+  }
+
+.fancy {
+    margin: auto;
+    border: double 7px transparent;
+    background-image: linear-gradient(#0d1016, #0d1016), linear-gradient(to right, #a371f7, #a5d6ff, #aff5b4);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    border-radius: 60px;
+    width: 200px;
+}
+
+.new {
+    margin: 32px 0px 0px 32px;
+    border: double 1px transparent;
+    background-image: linear-gradient(#0d1016, #0d1016), linear-gradient(to right, #a371f7, #a5d6ff, #aff5b4);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    border-radius: 20px;
+    width: fit-content;
+    height: 20px;
+}
+
+.new-text {
+    margin: 0px 5px;
+    background: -webkit-linear-gradient(left, #a371f7, #a5d6ff, #aff5b4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
